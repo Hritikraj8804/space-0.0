@@ -1,0 +1,845 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+:root {
+  --theme__font: "Barlow Condensed", sans-serif;
+  --title__font: "Bellefair", serif;
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --line-color: hsl(231deg 9% 31%);
+  --headline-number: hsl(222deg 9% 29%);
+  --nav-bg: rgba(255, 255, 255, 0.04);
+}
+
+html {
+  height: 100%;
+}
+html .swiper__height {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+header .navbar .nav-line {
+  background: var(--line-color);
+  mix-blend-mode: normal;
+  width: 45%;
+  height: 2px;
+  position: relative;
+  left: 40px;
+  z-index: 100;
+}
+header .navbar .navbar-collapse {
+  position: relative;
+}
+header .navbar .navbar-collapse .navbar-nav {
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(40.7742px);
+          backdrop-filter: blur(40.7742px);
+  padding: 0px 160px;
+  gap: 10px;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item {
+  margin: 0px 25px;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 18px;
+  border-bottom: solid 3px transparent;
+  padding: 30px 0px;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a b {
+  font-size: 20px;
+  margin-right: 10px;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+  border-bottom: solid 3px var(--white);
+}
+header .navbar .navbar-collapse .navbar-nav .nav-item .active {
+  border-bottom: solid 3px var(--white);
+}
+
+#space__multipage__home {
+  font-family: var(--theme__font);
+  background-image: url(/assets/img/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#space__multipage__home main {
+  padding-top: 120px;
+}
+#space__multipage__home main #main__space__explore .mse__space {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+#space__multipage__home main #main__space__explore .mse__space .mse__space__headline {
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#space__multipage__home main #main__space__explore .mse__space .mse__space__title {
+  font-family: var(--title__font);
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 165px;
+  margin-bottom: 15px;
+}
+#space__multipage__home main #main__space__explore .mse__space .mse__space__text {
+  color: var(--white);
+  font-size: 25px;
+  line-height: 1.5;
+}
+#space__multipage__home main #main__space__explore .mse__explore {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#space__multipage__home main #main__space__explore .mse__explore .mse__explore__content {
+  background-color: var(--white);
+  border-radius: 100%;
+}
+#space__multipage__home main #main__space__explore .mse__explore .mse__explore__content a {
+  color: var(--black);
+  font-size: 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  width: 220px;
+  border-radius: 100%;
+  background-color: var(--white);
+}
+
+#space__multipage__destination {
+  font-family: var(--theme__font);
+  background-image: url(/assets/img/destination/background-destination-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#space__multipage__destination main #main__destination__content .mdc__headline {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 30px;
+}
+#space__multipage__destination main #main__destination__content .mdc__headline span {
+  font-size: 25px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#space__multipage__destination main #main__destination__content .mdc__headline span b {
+  color: var(--headline-number);
+  margin-right: 10px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tab .nav-item .nav-link {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 20px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 25px;
+  cursor: pointer;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tab .nav-item .nav-link.active {
+  border-bottom: solid 2px var(--white);
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tab .nav-item .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__image {
+  text-align: center;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline {
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  border-bottom: solid 2px var(--line-color);
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .title {
+  font-family: var(--title__font);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 90px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .text {
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance {
+  display: flex;
+  flex-direction: column;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .distance__title {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .meter {
+  color: var(--white);
+  font-size: 40px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time {
+  display: flex;
+  flex-direction: column;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .time__title {
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .months {
+  color: var(--white);
+  font-size: 40px;
+}
+
+#space__multipage__crew {
+  font-family: var(--theme__font);
+  background-image: url(/assets/img/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#space__multipage__crew main #main__crew__content .mcc__headline {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 30px;
+}
+#space__multipage__crew main #main__crew__content .mcc__headline span {
+  font-size: 25px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#space__multipage__crew main #main__crew__content .mcc__headline span b {
+  color: var(--headline-number);
+  margin-right: 10px;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--title__font);
+  color: var(--white);
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: var(--headline-number);
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .personal {
+  text-transform: uppercase;
+  font-size: 65px;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job__text {
+  font-family: var(--theme__font);
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__image {
+  text-align: center;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__image img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-pagination {
+  display: flex;
+  bottom: 70px;
+  margin: 0 10px;
+}
+#space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-pagination .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: var(--white);
+}
+
+#space__multipage__technology {
+  font-family: var(--theme__font);
+  background-image: url(/assets/img/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#space__multipage__technology main #main__tech__content .mtc__headline {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 30px;
+}
+#space__multipage__technology main #main__tech__content .mtc__headline span {
+  font-size: 25px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#space__multipage__technology main #main__tech__content .mtc__headline span b {
+  color: var(--headline-number);
+  margin-right: 10px;
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .title {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .headline {
+  text-transform: uppercase;
+  font-size: 65px;
+  font-family: var(--title__font);
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .text {
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding-right: 240px;
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-pagination-bullet {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 2;
+  font-size: 28px;
+  color: var(--white);
+  opacity: 1;
+  background: transparent;
+  border: solid 1px var(--headline-number);
+}
+#space__multipage__technology main #main__tech__content .mtc__swiper .swiper-pagination-bullet-active {
+  color: var(--black);
+  background: var(--white);
+}
+
+br.small {
+  display: none;
+}
+
+br.large {
+  display: block;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  header .navbar .nav-line {
+    left: 30px;
+  }
+  header .navbar .navbar-collapse .navbar-nav {
+    padding: 0px 30px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job {
+    font-size: 25px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .personal {
+    font-size: 35px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job__text {
+    font-size: 20px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .title {
+    font-size: 25px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .headline {
+    font-size: 35px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .text {
+    font-size: 16px;
+    padding-right: 90px;
+  }
+  br.large {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  header .navbar .nav-line {
+    display: none;
+  }
+  header .navbar .navbar-collapse {
+    position: relative;
+  }
+  header .navbar .navbar-collapse::before {
+    display: none;
+  }
+  header .navbar .navbar-collapse .navbar-nav {
+    background: var(--nav-bg);
+    -webkit-backdrop-filter: blur(40.7742px);
+            backdrop-filter: blur(40.7742px);
+    padding: 0px 0px;
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item {
+    margin: 0px 25px;
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item a {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 18px;
+    border-bottom: solid 3px transparent;
+    padding: 30px 0px;
+    letter-spacing: 2px;
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item a b {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item a:hover {
+    border-bottom: solid 3px var(--white);
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item .active {
+    border-bottom: solid 3px var(--white);
+  }
+  #space__multipage__home {
+    background-image: url(/assets/img/home/background-home-tablet.jpg);
+  }
+  #space__multipage__home main {
+    padding-top: 10px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space {
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__headline {
+    font-size: 20px;
+    text-align: center;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__title {
+    font-size: 130px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__text {
+    font-size: 18px;
+    padding: 0 110px;
+    text-align: center;
+  }
+  #space__multipage__home main #main__space__explore .mse__explore {
+    justify-content: center;
+  }
+  #space__multipage__home main #main__space__explore .mse__explore .mse__explore__content {
+    background-color: var(--white);
+    border-radius: 100%;
+  }
+  #space__multipage__home main #main__space__explore .mse__explore .mse__explore__content a {
+    font-size: 30px;
+    height: 190px;
+    width: 190px;
+  }
+  #space__multipage__destination {
+    background-image: url(/assets/img/destination/background-destination-tablet.jpg);
+  }
+  #space__multipage__destination main #main__destination__content .mdc__headline {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 15px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__headline span {
+    font-size: 20px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tab .nav-item .nav-link {
+    font-size: 18px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__image {
+    text-align: center;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__image img {
+    height: 250px;
+    width: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .title {
+    text-align: center;
+    font-size: 50px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .text {
+    text-align: center;
+    font-size: 14px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .distance__title {
+    font-size: 12px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .meter {
+    font-size: 30px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .time__title {
+    font-size: 12px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .months {
+    font-size: 30px;
+  }
+  #space__multipage__crew {
+    background-image: url(/assets/img/crew/background-crew-tablet.jpg);
+  }
+  #space__multipage__crew main #main__crew__content .mcc__headline {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 15px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__headline span {
+    font-size: 20px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job {
+    text-align: center;
+    font-size: 25px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .personal {
+    text-align: center;
+    font-size: 40px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job__text {
+    text-align: center;
+    font-size: 14px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__image {
+    text-align: center;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__image img {
+    width: 300px;
+    height: 400px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-pagination {
+    bottom: 0px;
+  }
+  #space__multipage__technology {
+    background-image: url(/assets/img/technology/background-technology-tablet.jpg);
+  }
+  #space__multipage__technology main #main__tech__content .mtc__headline {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 15px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__headline span {
+    font-size: 20px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .title {
+    text-align: center;
+    font-size: 25px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .headline {
+    text-align: center;
+    font-size: 40px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .text {
+    text-align: center;
+    font-size: 14px;
+    padding-right: 0px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__image {
+    text-align: center;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__image img {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-pagination {
+    /*display: flex;*/
+    display: none;
+    justify-content: flex-end;
+    bottom: 0;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  br.large {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .navbar .navbar-collapse .navbar-nav {
+    padding: 0px 0px;
+  }
+  #space__multipage__home {
+    background-image: url(/assets/img/home/background-home-mobile.jpg);
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__headline {
+    font-size: 18px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__title {
+    font-size: 110px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__text {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+  #space__multipage__home main #main__space__explore .mse__explore {
+    justify-content: center;
+  }
+  #space__multipage__home main #main__space__explore .mse__explore .mse__explore__content a {
+    font-size: 28px;
+    height: 170px;
+    width: 170px;
+  }
+  #space__multipage__destination {
+    background-image: url(/assets/img/destination/background-destination-mobile.jpg);
+  }
+  #space__multipage__destination main #main__destination__content .mdc__headline {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__headline span {
+    font-size: 18px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tab .nav-item .nav-link {
+    font-size: 16px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__image img {
+    height: 200px;
+    width: 200px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .title {
+    font-size: 40px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .text {
+    font-size: 14px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .distance__title {
+    font-size: 12px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .meter {
+    font-size: 25px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .time__title {
+    font-size: 12px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .months {
+    font-size: 25px;
+  }
+  #space__multipage__crew {
+    background-image: url(/assets/img/crew/background-crew-mobile.jpg);
+  }
+  #space__multipage__crew main #main__crew__content .mcc__headline {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__headline span {
+    font-size: 18px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job {
+    font-size: 18px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .personal {
+    font-size: 25px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job__text {
+    font-size: 14px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__image img {
+    width: 200px;
+    height: 300px;
+  }
+  #space__multipage__technology {
+    background-image: url(/assets/img/technology/background-technology-mobile.jpg);
+  }
+  #space__multipage__technology main #main__tech__content .mtc__headline {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__headline span {
+    font-size: 18px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .title {
+    font-size: 18px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .headline {
+    font-size: 25px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .text {
+    font-size: 14px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__image img {
+    height: 200px;
+    width: 200px;
+  }
+  br.small {
+    display: block;
+  }
+  br.large {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__headline {
+    font-size: 14px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__title {
+    font-size: 80px;
+  }
+  #space__multipage__home main #main__space__explore .mse__space .mse__space__text {
+    font-size: 16px;
+  }
+  #space__multipage__home main #main__space__explore .mse__explore .mse__explore__content a {
+    font-size: 25px;
+    height: 150px;
+    width: 150px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__headline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__headline span {
+    font-size: 16px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tab .nav-item .nav-link {
+    font-size: 14px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__image img {
+    height: 200px;
+    width: 200px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .title {
+    font-size: 40px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__headline .text {
+    font-size: 14px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .distance__title {
+    font-size: 10px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .distance .meter {
+    font-size: 20px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .time__title {
+    font-size: 10px;
+  }
+  #space__multipage__destination main #main__destination__content .mdc__tab #pills-tabContent .tab__content .tab__counter .time .months {
+    font-size: 20px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__headline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__headline span {
+    font-size: 18px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job {
+    font-size: 16px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .personal {
+    font-size: 20px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__job .job__text {
+    font-size: 12px;
+  }
+  #space__multipage__crew main #main__crew__content .mcc__swiper .mySwiper .swiper-wrapper .swiper-slide .pers__image img {
+    width: 200px;
+    height: 300px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__headline {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__headline span {
+    font-size: 18px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .title {
+    font-size: 18px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .headline {
+    font-size: 25px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__content .text {
+    font-size: 12px;
+  }
+  #space__multipage__technology main #main__tech__content .mtc__swiper .swiper-slide .mtc__image img {
+    height: 200px;
+    width: 200px;
+  }
+}/*# sourceMappingURL=style.css.map */

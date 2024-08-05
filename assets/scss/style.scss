@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+:root {
+    --theme__font: 'Barlow Condensed', sans-serif;
+    --title__font: 'Bellefair', serif;
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --line-color: hsl(231deg 9% 31%);
+    --headline-number: hsl(222deg 9% 29%);
+    --nav-bg: rgba(255, 255, 255, 0.04);
+}
+
+html {
+    height: 100%;
+    .swiper__height {
+        position: relative;
+        height: 100%;
+    }
+}
+body {
+    min-height: 100vh;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding-top: 50px;
+    margin-bottom: 80px;
+    .navbar {
+        .nav-line {
+            background: var(--line-color);
+            mix-blend-mode: normal;
+            width: 45%;
+            height: 2px;
+            position: relative;
+            left: 40px;
+            z-index: 100;
+        }
+        .navbar-collapse {
+            position: relative;
+            .navbar-nav {
+                background: var(--nav-bg);
+                backdrop-filter: blur(40.7742px);
+                padding: 0px 160px;
+                gap: 10px;
+                .nav-item {
+                    margin: 0px 25px;
+                    a {
+                        color: var(--white);
+                        text-transform: uppercase;
+                        font-size: 18px;
+                        border-bottom: solid 3px transparent;
+                        padding: 30px 0px;
+                        letter-spacing: 2px;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        b {
+                            font-size: 20px;
+                            margin-right: 10px;
+                        }
+                        &:hover {
+                            border-bottom: solid 3px var(--white);
+                        }
+                    }
+                    .active {
+                        border-bottom: solid 3px var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+#space__multipage__home {
+    font-family: var(--theme__font);
+    background-image: url(/assets/img/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    main {
+        padding-top: 120px;
+        #main__space__explore {
+            .mse__space {
+                display: flex;
+                flex-direction: column;
+                line-height: 1;
+                .mse__space__headline {
+                    text-transform: uppercase;
+                    color: var(--white);
+                    font-size: 35px;
+                    letter-spacing: 3px;
+                    margin-bottom: 20px;
+                }
+                .mse__space__title {
+                    font-family: var(--title__font);
+                    text-transform: uppercase;
+                    color: var(--white);
+                    font-size: 165px;
+                    margin-bottom: 15px;
+                }
+                .mse__space__text {
+                    color: var(--white);
+                    font-size: 25px;
+                    line-height: 1.5;
+                }
+            }
+            .mse__explore {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                .mse__explore__content {
+                    background-color: var(--white);
+                    border-radius: 100%;
+                    a {
+                        color: var(--black);
+                        font-size: 35px;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 220px;
+                        width: 220px;
+                        border-radius: 100%;
+                        background-color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
+#space__multipage__destination {
+    font-family: var(--theme__font);
+    background-image: url(/assets/img/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    main {
+        #main__destination__content {
+            .mdc__headline {
+                padding-left: 200px;
+                padding-right: 200px;
+                margin-bottom: 30px;
+                span {
+                    font-size: 25px;
+                    color: var(--white);
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    b {
+                        color: var(--headline-number);
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .mdc__tab {
+                padding-left: 200px;
+                padding-right: 200px;
+                #pills-tab {
+                    .nav-item {
+                        .nav-link {
+                            background-color: transparent;
+                            border: 0;
+                            border-radius: 0;
+                            font-size: 20px;
+                            color: var(--white);
+                            text-transform: uppercase;
+                            letter-spacing: 3px;
+                            padding-left: 0;
+                            padding-right: 0;
+                            margin-right: 25px;
+                            cursor: pointer;
+                            &.active {
+                                border-bottom: solid 2px var(--white);
+                            }
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+                #pills-tabContent {
+                    .tab__image {
+                        text-align: center;
+                    }
+                    .tab__content {
+                        .tab__headline {
+                            padding-bottom: 40px;
+                            margin-bottom: 30px;
+                            border-bottom: solid 2px var(--line-color);
+                            .title {
+                                font-family: var(--title__font);
+                                color: var(--white);
+                                text-transform: uppercase;
+                                font-size: 90px;
+                            }
+                            .text {
+                                color: var(--white);
+                                font-size: 18px;
+                                letter-spacing: 2px;
+                            }
+                        }
+                        .tab__counter {
+                            display: flex;
+                            align-items: center;
+                            gap: 80px;
+                            .distance {
+                                display: flex;
+                                flex-direction: column;
+                                .distance__title {
+                                    color: var(--white);
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;
+                                }
+                                .meter {
+                                    color: var(--white);
+                                    font-size: 40px;
+                                }
+                            }
+                            .time {
+                                display: flex;
+                                flex-direction: column;
+                                .time__title {
+                                    color: var(--white);
+                                    text-transform: uppercase;
+                                    letter-spacing: 2px;
+                                }
+                                .months {
+                                    color: var(--white);
+                                    font-size: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#space__multipage__crew {
+    font-family: var(--theme__font);
+    background-image: url(/assets/img/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    main {
+        #main__crew__content {
+            .mcc__headline {
+                padding-left: 200px;
+                padding-right: 200px;
+                margin-bottom: 30px;
+                span {
+                    font-size: 25px;
+                    color: var(--white);
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    b {
+                        color: var(--headline-number);
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .mcc__swiper {
+                padding-left: 200px;
+                padding-right: 200px;
+                .mySwiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .pers__job {
+                                display: flex;
+                                flex-direction: column;
+                                font-family: var(--title__font);
+                                color: var(--white);
+                                .job {
+                                    text-transform: uppercase;
+                                    font-size: 35px;
+                                    color: var(--headline-number);
+                                }
+                                .personal {
+                                    text-transform: uppercase;
+                                    font-size: 65px;
+                                }
+                                .job__text {
+                                    font-family: var(--theme__font);
+                                    letter-spacing: 2px;
+                                    font-size: 20px;
+                                }
+                            }
+                            .pers__image {
+                                text-align: center;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    max-width: 400px;
+                                    max-height: 500px;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        display: flex;
+                        bottom: 70px;
+                        margin: 0 10px;
+                        .swiper-pagination-bullet {
+                            width: 15px;
+                            height: 15px;
+                            background: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#space__multipage__technology {
+    font-family: var(--theme__font);
+    background-image: url(/assets/img/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    main {
+        #main__tech__content {
+            .mtc__headline {
+                padding-left: 200px;
+                padding-right: 200px;
+                margin-bottom: 30px;
+                span {
+                    font-size: 25px;
+                    color: var(--white);
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    b {
+                        color: var(--headline-number);
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .mtc__swiper {
+                padding-left: 200px;
+                padding-right: 200px;
+                .swiper-slide {
+                    .mtc__content {
+                        display: flex;
+                        flex-direction: column;
+                        color: var(--white);
+                        .title {
+                           text-transform: uppercase;
+                           font-size: 35px;
+                        }
+                        .headline {
+                            text-transform: uppercase;
+                            font-size: 65px;
+                            font-family: var(--title__font);
+                        }
+                        .text {
+                            letter-spacing: 2px;
+                            font-size: 20px;
+                            padding-right: 240px;
+                        }
+                    }
+                    .mtc__image {
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                .swiper-pagination-bullet {
+                    width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    line-height: 2;
+                    font-size: 28px;
+                    color: var(--white);
+                    opacity: 1;
+                    background: transparent;
+                    border: solid 1px var(--headline-number);
+                }
+                .swiper-pagination-bullet-active {
+                    color: var(--black);
+                    background: var(--white);
+                }
+            }
+        }
+    }
+}
+br.small {
+    display: none;
+}
+br.large {
+    display: block;
+}
+@media (min-width: 1200px) {  
+
+}
+
+@media only screen and (min-width: 992px)and (max-width:1200px) {
+    header {
+        .navbar {
+            .nav-line {
+                left: 30px;
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    padding: 0px 30px;
+                }
+            }
+        }
+    }
+    #space__multipage__crew {
+        main {
+            #main__crew__content {
+                .mcc__swiper {
+                    .mySwiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .pers__job {
+                                    .job {
+                                        font-size: 25px;
+                                    }
+                                    .personal {
+                                        font-size: 35px;
+                                    }
+                                    .job__text {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__technology {
+        main {
+            #main__tech__content {
+                .mtc__swiper {
+                    .swiper-slide {
+                        .mtc__content {
+                            .title {
+                               font-size: 25px;
+                            }
+                            .headline {
+                                font-size: 35px;
+                            }
+                            .text {
+                                font-size: 16px;
+                                padding-right: 90px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    br.large {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) { 
+    header {
+        padding-top: 20px;
+        margin-bottom: 40px;
+        .navbar {
+            .nav-line {
+                display: none;
+            }
+            .navbar-collapse {
+                position: relative;
+                &::before {
+                    display: none;
+                }
+                .navbar-nav {
+                    background: var(--nav-bg);
+                    backdrop-filter: blur(40.7742px);
+                    padding: 0px 0px;
+                    .nav-item {
+                        margin: 0px 25px;
+                        a {
+                            color: var(--white);
+                            text-transform: uppercase;
+                            font-size: 18px;
+                            border-bottom: solid 3px transparent;
+                            padding: 30px 0px;
+                            letter-spacing: 2px;
+                            b {
+                                font-size: 20px;
+                                margin-right: 10px;
+                            }
+                            &:hover {
+                                border-bottom: solid 3px var(--white);
+                            }
+                        }
+                        .active {
+                            border-bottom: solid 3px var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__home {
+        background-image: url(/assets/img/home/background-home-tablet.jpg);
+        main {
+            padding-top: 10px;
+            #main__space__explore {
+                .mse__space {
+                    align-items: center;
+                    margin-bottom: 80px;
+                    .mse__space__headline {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .mse__space__title {
+                        font-size: 130px;
+                    }
+                    .mse__space__text {
+                        font-size: 18px;
+                        padding: 0 110px;
+                        text-align: center;
+                    }
+                }
+                .mse__explore {
+                    justify-content: center;
+                    .mse__explore__content {
+                        background-color: var(--white);
+                        border-radius: 100%;
+                        a {
+                            font-size: 30px;
+                            height: 190px;
+                            width: 190px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__destination {
+        background-image: url(/assets/img/destination/background-destination-tablet.jpg);
+        main {
+            #main__destination__content {
+                .mdc__headline {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .mdc__tab {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    #pills-tab {
+                        .nav-item {
+                            .nav-link {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    #pills-tabContent {
+                        .tab__image {
+                            text-align: center;
+                            img {
+                                height: 250px;
+                                width: 250px;
+                                object-fit: cover;
+                            }
+                        }
+                        .tab__content {
+                            .tab__headline {
+                                text-align: center;
+                                margin-top: 20px;
+                                padding-bottom: 20px;
+                                .title {
+                                    text-align: center;
+                                    font-size: 50px;
+                                }
+                                .text {
+                                    text-align: center;
+                                    font-size: 14px;
+                                }
+                            }
+                            .tab__counter {
+                                .distance {
+                                    .distance__title {
+                                        font-size: 12px;
+                                    }
+                                    .meter {
+                                        font-size: 30px;
+                                    }
+                                }
+                                .time {
+                                    .time__title {
+                                        font-size: 12px;
+                                    }
+                                    .months {
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__crew {
+        background-image: url(/assets/img/crew/background-crew-tablet.jpg);
+        main {
+            #main__crew__content {
+                .mcc__headline {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .mcc__swiper {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    .mySwiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .pers__job {
+                                    .job {
+                                        text-align: center;
+                                        font-size: 25px;
+                                    }
+                                    .personal {
+                                        text-align: center;
+                                        font-size: 40px;
+                                    }
+                                    .job__text {
+                                        text-align: center;
+                                        font-size: 14px;
+                                    }
+                                }
+                                .pers__image {
+                                    text-align: center;
+                                    img {
+                                        width: 300px;
+                                        height: 400px;
+                                    }
+                                }
+                            }
+                        }
+                        .swiper-pagination {
+                            bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__technology {
+        background-image: url(/assets/img/technology/background-technology-tablet.jpg);
+        main {
+            #main__tech__content {
+                .mtc__headline {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    margin-bottom: 15px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                .mtc__swiper {
+                    padding-left: 70px;
+                    padding-right: 70px;
+                    .swiper-slide {
+                        .mtc__content {
+                            .title {
+                                text-align: center;
+                                font-size: 25px;
+                            }
+                            .headline {
+                                text-align: center;
+                                font-size: 40px;
+                            }
+                            .text {
+                                text-align: center;
+                                font-size: 14px;
+                                padding-right: 0px;
+                            }
+                        }
+                        .mtc__image {
+                            text-align: center;
+                            img {
+                                height: 300px;
+                                width: 300px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        /*display: flex;*/
+                        display: none;
+                        justify-content: flex-end;
+                        bottom: 0;
+                    }
+                    .swiper-pagination-bullet {
+                        width: 30px;
+                        height: 30px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    br.large {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) { 
+    header {
+        .navbar {
+            .navbar-collapse {
+                .navbar-nav {
+                    padding: 0px 0px;
+                }
+            }
+        }
+    }
+    #space__multipage__home {
+        background-image: url(/assets/img/home/background-home-mobile.jpg);
+        main {
+            #main__space__explore {
+                .mse__space {
+                    .mse__space__headline {
+                        font-size: 18px;
+                    }
+                    .mse__space__title {
+                        font-size: 110px;
+                    }
+                    .mse__space__text {
+                        font-size: 16px;
+                        padding: 0 30px;
+                    }
+                }
+                .mse__explore {
+                    justify-content: center;
+                    .mse__explore__content {
+                        a {
+                            font-size: 28px;
+                            height: 170px;
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__destination {
+        background-image: url(/assets/img/destination/background-destination-mobile.jpg);
+        main {
+            #main__destination__content {
+                .mdc__headline {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+                .mdc__tab {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    #pills-tab {
+                        .nav-item {
+                            .nav-link {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    #pills-tabContent {
+                        .tab__image {
+                            img {
+                                height: 200px;
+                                width: 200px;
+                            }
+                        }
+                        .tab__content {
+                            .tab__headline {
+                                .title {
+                                    font-size: 40px;
+                                }
+                                .text {
+                                    font-size: 14px;
+                                }
+                            }
+                            .tab__counter {
+                                .distance {
+                                    .distance__title {
+                                        font-size: 12px;
+                                    }
+                                    .meter {
+                                        font-size: 25px;
+                                    }
+                                }
+                                .time {
+                                    .time__title {
+                                        font-size: 12px;
+                                    }
+                                    .months {
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__crew {
+        background-image: url(/assets/img/crew/background-crew-mobile.jpg);
+        main {
+            #main__crew__content {
+                .mcc__headline {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+                .mcc__swiper {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    .mySwiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .pers__job {
+                                    .job {
+                                        font-size: 18px;
+                                    }
+                                    .personal {
+                                        font-size: 25px;
+                                    }
+                                    .job__text {
+                                        font-size: 14px;
+                                    }
+                                }
+                                .pers__image {
+                                    img {
+                                        width: 200px;
+                                        height: 300px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__technology {
+        background-image: url(/assets/img/technology/background-technology-mobile.jpg);
+        main {
+            #main__tech__content {
+                .mtc__headline {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+                .mtc__swiper {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                    .swiper-slide {
+                        .mtc__content {
+                            .title {
+                                font-size: 18px;
+                            }
+                            .headline {
+                                font-size: 25px;
+                            }
+                            .text {
+                                font-size: 14px;
+                            }
+                        }
+                        .mtc__image {
+                            img {
+                                height: 200px;
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    br.small {
+        display: block;
+    }
+    br.large {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) { 
+    #space__multipage__home {
+        main {
+            #main__space__explore {
+                .mse__space {
+                    .mse__space__headline {
+                        font-size: 14px;
+                    }
+                    .mse__space__title {
+                        font-size: 80px;
+                    }
+                    .mse__space__text {
+                        font-size: 16px;
+                    }
+                }
+                .mse__explore {
+                    .mse__explore__content {
+                        a {
+                            font-size: 25px;
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__destination {
+        main {
+            #main__destination__content {
+                .mdc__headline {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    span {
+                        font-size: 16px;
+                    }
+                }
+                .mdc__tab {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    #pills-tab {
+                        .nav-item {
+                            .nav-link {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    #pills-tabContent {
+                        .tab__image {
+                            img {
+                                height: 200px;
+                                width: 200px;
+                            }
+                        }
+                        .tab__content {
+                            .tab__headline {
+                                .title {
+                                    font-size: 40px;
+                                }
+                                .text {
+                                    font-size: 14px;
+                                }
+                            }
+                            .tab__counter {
+                                .distance {
+                                    .distance__title {
+                                        font-size: 10px;
+                                    }
+                                    .meter {
+                                        font-size: 20px;
+                                    }
+                                }
+                                .time {
+                                    .time__title {
+                                        font-size: 10px;
+                                    }
+                                    .months {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__crew {
+        main {
+            #main__crew__content {
+                .mcc__headline {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+                .mcc__swiper {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .mySwiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                .pers__job {
+                                    .job {
+                                        font-size: 16px;
+                                    }
+                                    .personal {
+                                        font-size: 20px;
+                                    }
+                                    .job__text {
+                                        font-size: 12px;
+                                    }
+                                }
+                                .pers__image {
+                                    img {
+                                        width: 200px;
+                                        height: 300px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #space__multipage__technology {
+        main {
+            #main__tech__content {
+                .mtc__headline {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+                .mtc__swiper {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    .swiper-slide {
+                        .mtc__content {
+                            .title {
+                                font-size: 18px;
+                            }
+                            .headline {
+                                font-size: 25px;
+                            }
+                            .text {
+                                font-size: 12px;
+                            }
+                        }
+                        .mtc__image {
+                            img {
+                                height: 200px;
+                                width: 200px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
